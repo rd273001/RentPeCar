@@ -1,0 +1,69 @@
+{
+  "name": "@progress/kendo-licensing",
+  "version": "1.3.0",
+  "description": "Kendo UI License Manager",
+  "author": "Progress",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bin": {
+    "kendo-ui-license": "./bin/kendo-ui-license.js"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index-esm.js",
+  "typings": "dist/index.d.ts",
+  "jsdelivr": "dist/index.js",
+  "unpkg": "dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint src",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "postinstall": "node ./bin/kendo-ui-license.js activate --ignore-no-license",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@rollup/plugin-strip": "^3.0.1",
+    "@types/jest": "^29.2.3",
+    "@types/jsonwebtoken": "",
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "husky": "^8.0.2",
+    "javascript-obfuscator": "^1.5.0",
+    "jest": "^29.3.1",
+    "rollup": "^3.5.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "semantic-release": "^19.0.5",
+    "ts-jest": "^29.0.3",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
+  },
+  "release": {
+    "branches": [
+      {
+        "name": "master",
+        "channel": "latest"
+      },
+      {
+        "name": "develop",
+        "prerelease": true,
+        "channel": "dev"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-licensing.git"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "index.d.ts"
+  ]
+}

@@ -1,0 +1,66 @@
+.title {
+  font-weight: bold;
+  text-align: center;
+}
+.item-container {
+  float: left;
+  width: 350px;
+  height: 300px;
+  cursor:pointer;
+  margin: 20px;
+  padding:5px;
+  background-color:#ffffff  ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.item-title {
+  text-align: center;
+  font-weight: bold;
+  text-align: start;
+  padding: 5px;
+}
+
+
+
+.slider-container {
+  clear: both;
+  padding: 40px;
+  border: solid lightgray 2px;
+  margin-top: 20px;
+}
+.price{
+  font-weight: bold;
+  text-align: end;
+  padding-right: 5px;
+  align-items: center;
+}
+
+.car-info{
+margin: 20px;
+background-color: rgb(32, 32, 28);
+color:white;
+}
+
+
+.car-type-container {
+  float: left;
+  width: 400px;
+  height: 280px;
+  margin: 15px;
+  cursor: pointer;
+  padding:10px;
+  background-color:#ffc107  ;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.type-title{
+padding: 10px;
+  text-align: center;
+  font-size:larger;
+  font-weight: bold;
+}
