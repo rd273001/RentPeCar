@@ -36,18 +36,16 @@ public class CarServiceImpl implements CarService {
 
 	@Override
 	public List<Car> findBycategoryId(int id) {
-		// TODO Auto-generated method stub
 		return carDao.findBycarCategoryId(id);
 	}
 
 	@Override
 	public void deleteBooking(Car carId) {
-carDao.delete(carId);
+      	carDao.delete(carId);
 	}
 
 	@Override
 	public List<Car> getAll() {
-		// TODO Auto-generated method stub
 		return carDao.findAll();
 	}
 
