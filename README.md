@@ -1,6 +1,6 @@
 # RentPeCar Web Application
 
-RentPeCar is a web application developed using Spring Boot, Spring Data JPA, Hibernate, MySQL and React. The application allows users to rent cars from a car rental company. Users can view available cars, make reservations, and manage their reservations.
+RentPeCar is a Full Stack Web Application developed using Spring Boot, Spring Data JPA, Hibernate, MySQL and React. The application allows users to rent cars from a car rental company. Users can view available cars, make reservations, and manage their reservations.
 
 => Features :-
 The application provides the following features :
